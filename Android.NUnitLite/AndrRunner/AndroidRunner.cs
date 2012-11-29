@@ -44,9 +44,6 @@ namespace Android.NUnitLite
 		public AndroidRunner ()
 		{
 		}
-		
-		public bool AutoStart { get; set; }
-
 		public bool TerminateAfterExecution { get; set; }
 		
 		public Options Options { 

@@ -31,10 +31,14 @@ namespace Andr.Unit
 		{
 			// tests can be inside the main assembly
 			AddTest (Assembly.GetExecutingAssembly ());
+
 			// or in any reference assemblies			
-			AddTest (typeof (m4a.tests.RunnerTest).Assembly);
+#region Mono Tests
+			AddTest (typeof (MonoTest.Concurrent.ConcurrentBagTests).Assembly);
+			AddTest (typeof (MonoTest.Generic.LinkedListTest).Assembly);
+#endregion
+
 			// or in any assembly that you load (since JIT is available)
-			
 #if false
 			// you can use the default or set your own custom writer (e.g. save to web site and tweet it ;-)
 			Runner.Writer = new TcpTextWriter ("10.0.1.2", 16384);
