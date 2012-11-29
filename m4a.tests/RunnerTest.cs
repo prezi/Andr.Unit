@@ -16,15 +16,27 @@
 
 using System;
 using NUnit.Framework;
+using NUnitLite.Runner;
 
 namespace m4a.tests {
 	
 	[TestFixture]
 	public class RunnerTest {
+
+		public RunnerTest() {
+		}
+
+		[SetUp]
+		public void Setup(){}
+
+
+		[TearDown]
+		public void Tear() {}
 		
 		[Test]
 		public void Pass ()
 		{
+			Console.WriteLine ("test1");
 			Assert.True (true);
 		}
 
@@ -39,6 +51,12 @@ namespace m4a.tests {
 		public void Ignore ()
 		{
 			Assert.True (false);
+		}
+
+		[Test]
+		public void Inconclusive ()
+		{
+			Assert.Inconclusive ("Inconclusive");
 		}
 	}
 }

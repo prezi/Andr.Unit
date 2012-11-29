@@ -13,20 +13,23 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
 using System;
 
 using Android.App;
 using Android.Content;
 using Android.Views;
+using NUnit.Framework.Internal;
 
 using NUnitLite;
+using NUnit.Framework.Api;
+using NUnitLite.Runner;
 
-namespace Android.NUnitLite.UI {
-	
-	class TestCaseElement : TestElement {
+namespace Android.NUnitLite.UI
+{
+	class TestCaseElement : TestElement
+	{
 		
-		public TestCaseElement (TestCase test) : base (test)
+		public TestCaseElement (NUnit.Framework.Internal.Test test) : base (test)
 		{
 			if (test.RunState == RunState.Runnable)
 				Indicator = "..."; // hint there's more
@@ -34,20 +37,21 @@ namespace Android.NUnitLite.UI {
 		
 		protected override string GetCaption ()
 		{
-			if (TestCase.RunState == RunState.Ignored) {
-				return String.Format ("<b>{0}</b><br><font color='#FF7700'>{1}: {2}</font>", 
-					TestCase.Name, TestCase.RunState, TestCase.IgnoreReason); 
-			} else if (Result == null) {
-				return String.Format ("<b>{0}</b><br><font color='grey'>{1}</font>", TestCase.Name, TestCase.RunState);
-			} else if (Result.IsSuccess) {
-				return String.Format ("<b>{0}</b><br><font color='green'>Success!</font>", TestCase.Name); 
-			} else {
+			if (Result == null) {
+				return String.Format ("<b>{0}</b><br><font color='white'>{1}</font>", TestCase.Name, TestCase.RunState);
+			} else if (Result.ResultState.Status == TestStatus.Passed) {
+				return String.Format ("<b>{0}</b><br><font color='lime'>Success!</font>", TestCase.Name); 
+			} else if (Result.ResultState.Status == TestStatus.Failed) {
 				return String.Format ("<b>{0}</b><br><font color='red'>{1}</font>", TestCase.Name, Result.Message); 
+			} else if (Result.ResultState.Status == TestStatus.Inconclusive) {
+				return String.Format ("<b>{0}</b><br><font color='#FF00FF'>{1}</font>", TestCase.Name, Result.Message); 
+			} else { //skipped or ignored
+				return String.Format ("<b>{0}</b><br><font color='yellow'>{1}: {2}</font>", TestCase.Name, TestCase.RunState, Result.Message);
 			}
 		}
 		
-		public TestCase TestCase {
-			get { return Test as TestCase; }
+		public NUnit.Framework.Internal.Test TestCase {
+			get { return Test as NUnit.Framework.Internal.Test; }
 		}
 		
 		public override View GetView (Context context, View convertView, ViewGroup parent)
@@ -62,14 +66,14 @@ namespace Android.NUnitLite.UI {
 					return;
 				
 				try {
-					TestCase.Run (runner);
-				}
-				finally {
+					//Test.Run (runner);
+					runner.Run (TestCase);
+				} finally {
 					runner.CloseWriter ();
 				}
 
-				if (!Result.IsSuccess) {
-					Intent intent = new Intent (context, typeof (TestResultActivity));
+				if (Result.ResultState.Status != TestStatus.Passed) {
+					Intent intent = new Intent (context, typeof(TestResultActivity));
 					intent.PutExtra ("TestCase", Name);
 					intent.AddFlags (ActivityFlags.NewTask);			
 					context.StartActivity (intent);

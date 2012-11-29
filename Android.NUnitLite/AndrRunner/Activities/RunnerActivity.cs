@@ -13,7 +13,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -28,42 +27,46 @@ using MonoDroid.Dialog;
 
 using NUnitLite;
 using NUnitLite.Runner;
+using NUnit.Framework.Internal;
+using NUnit.Framework.Api;
+using System.Collections;
 
-namespace Android.NUnitLite.UI {
-
-    public class RunnerActivity : Activity {
-		
+namespace Android.NUnitLite.UI
+{
+	public class RunnerActivity : Activity
+	{
 		Section main;
-		
+
 		public RunnerActivity ()
 		{
 			Initialized = (AndroidRunner.AssemblyLevel.Count > 0);
 		}
 		
 		public bool Initialized {
-			get; private set;
+			get;
+			private set;
 		}
 		
 		public AndroidRunner Runner {
 			get { return AndroidRunner.Runner; }
 		}
 
-        protected override void OnCreate (Bundle bundle)
-        {
-            base.OnCreate (bundle);
+		protected override void OnCreate (Bundle bundle)
+		{
+			base.OnCreate (bundle);
 			
 			if (Runner.Options == null)
 				Runner.Options = new Options (this);
 			
 			var menu = new RootElement ("Test Runner");
-			
 			main = new Section ("Test Suites");
+
 			foreach (TestSuite suite in AndroidRunner.AssemblyLevel) {
 				main.Add (new TestSuiteElement (suite));
 			}
 			menu.Add (main);
 
-			Section options = new Section () {
+			Section options = new Section ("Options") {
 				new ActionElement ("Run Everything", Run),
 				new ActivityElement ("Options", typeof (OptionsActivity)),
 				new ActivityElement ("Credits", typeof (CreditsActivity))
@@ -91,7 +94,7 @@ namespace Android.NUnitLite.UI {
 			}
 		}
 		
-		public void Add (Assembly assembly)
+		public void AddTest (Assembly assembly)
 		{
 			if (assembly == null)
 				throw new ArgumentNullException ("assembly");
@@ -100,19 +103,22 @@ namespace Android.NUnitLite.UI {
 			// once since we need to share them across most activities
 			if (!Initialized) {
 				// TestLoader.Load always return a TestSuite so we can avoid casting many times
-				TestSuite ts = TestLoader.Load (assembly) as TestSuite;
-				AndroidRunner.AssemblyLevel.Add (ts);
-				Add (ts);
+				TestSuite ts = Runner.LoadAssembly (assembly, null);
+				if (ts != null) {
+					AndroidRunner.AssemblyLevel.Add (ts);
+					AddTest (ts);
+				}
 			}
 		}
 		
-		void Add (TestSuite suite)
+		void AddTest (TestSuite suite)
 		{
 			AndroidRunner.Suites.Add (suite.FullName ?? suite.Name, suite);
 			foreach (ITest test in suite.Tests) {
 				TestSuite ts = (test as TestSuite);
-				if (ts != null)
-					Add (ts);
+				if (ts != null) {
+					AddTest (ts);
+				}
 			}
 		}
 
@@ -123,10 +129,9 @@ namespace Android.NUnitLite.UI {
 			
 			try {
 				foreach (TestSuite suite in AndroidRunner.AssemblyLevel) {
-					suite.Run (Runner);
+					Runner.Run (suite); 
 				}
-			}
-			finally {
+			} finally {
 				Runner.CloseWriter ();
 			}
 			
@@ -134,5 +139,5 @@ namespace Android.NUnitLite.UI {
 				te.Update ();
 			}
 		}
-    }
+	}
 }

@@ -13,7 +13,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,14 +23,25 @@ using Android.Content;
 using Android.Widget;
 
 using NUnitLite;
+using NUnit.Framework.Api;
+using NUnit.Framework.Internal;
+using NUnit.Framework.Internal.WorkItems;
+using System.Reflection;
+using System.Collections;
+using Android.NUnitLite.UI;
+using MonoDroid.Dialog;
 
-namespace Android.NUnitLite {
-	
-	public class AndroidRunner : TestListener {
-		
+namespace Android.NUnitLite
+{
+	public class AndroidRunner : ITestListener, ITestFilter
+	{
 		Options options;
-		
-		private AndroidRunner ()
+		NUnitLiteTestAssemblyBuilder builder = new NUnitLiteTestAssemblyBuilder ();
+		Dictionary<string, object> empty = new Dictionary<string, object> ();
+
+		public List<Assembly> Assemblies = new List<Assembly> ();
+
+		public AndroidRunner ()
 		{
 		}
 		
@@ -47,7 +57,17 @@ namespace Android.NUnitLite {
 			}
 			set { options = value; }
 		}
-		
+
+		public TestSuite LoadAssembly (string assemblyName, IDictionary settings)
+		{
+			return builder.Build (assemblyName, settings ?? empty);
+		}
+
+		public TestSuite LoadAssembly (Assembly assembly, IDictionary settings)
+		{
+			return builder.Build (assembly, settings ?? empty);
+		}
+
 		#region writer
 		
 		public TextWriter Writer { get; set; }
@@ -61,8 +81,7 @@ namespace Android.NUnitLite {
 					Console.WriteLine ("[{0}] Sending '{1}' results to {2}:{3}", now, message, Options.HostName, Options.HostPort);
 					try {
 						Writer = new TcpTextWriter (Options.HostName, Options.HostPort);
-					}
-					catch (SocketException) {
+					} catch (SocketException) {
 						string msg = String.Format ("Cannot connect to {0}:{1}. Start network service or disable network option", options.HostName, options.HostPort);
 						Toast.MakeText (activity, msg, ToastLength.Long).Show ();
 						return false;
@@ -73,7 +92,8 @@ namespace Android.NUnitLite {
 			}
 
 			Writer.WriteLine ("[Runner executing:\t{0}]", message);
-			// FIXME
+
+			// FIXME: provide valid MFA version
 			Writer.WriteLine ("[M4A Version:\t{0}]", "???");
 			
 			Writer.WriteLine ("[Board:\t\t{0}]", Android.OS.Build.Board);
@@ -102,7 +122,6 @@ namespace Android.NUnitLite {
 			Writer.WriteLine ("[Device Date/Time:\t{0}]", now); // to match earlier C.WL output
 			
 			// FIXME: add data about how the app was compiled (e.g. ARMvX, LLVM, Linker options)
-
 			return true;
 		}
 		
@@ -125,20 +144,27 @@ namespace Android.NUnitLite {
 
 		Stack<DateTime> time = new Stack<DateTime> ();
 			
-		public void TestFinished (TestResult result)
+		public void TestFinished (ITestResult result)
 		{
-			AndroidRunner.Results [result.Test.FullName ?? result.Test.Name] = result;
+			AndroidRunner.Results [result.Test.FullName ?? result.Test.Name] = result as TestResult;
 			
 			if (result.Test is TestSuite) {
-				if (!result.IsError && !result.IsFailure && !result.IsSuccess && !result.Executed)
+				//if (!result.IsError && !result.IsFailure && !result.IsSuccess && !result.Executed)
+				//Writer.WriteLine ("\t[INFO] {0}", result.Message);
+				if (result.ResultState.Status != TestStatus.Failed
+					&& result.ResultState.Status != TestStatus.Skipped
+					&& result.ResultState.Status != TestStatus.Passed
+					&& result.ResultState.Status != TestStatus.Inconclusive)
 					Writer.WriteLine ("\t[INFO] {0}", result.Message);
 				
 				var diff = DateTime.UtcNow - time.Pop ();
 				Writer.WriteLine ("{0} : {1} ms", result.Test.Name, diff.TotalMilliseconds);
+
 			} else {
-				if (result.IsSuccess) {
-					Writer.Write ("\t{0} ", result.Executed ? "[PASS]" : "[IGNORED]");
-				} else if (result.IsFailure || result.IsError) {
+				if (result.ResultState.Status == TestStatus.Passed) {
+					//Writer.Write ("\t{0} ", result.Executed ? "[PASS]" : "[IGNORED]");
+					Writer.Write ("\t{0} ", result.ResultState.ToString ());
+				} else if (result.ResultState.Status == TestStatus.Failed) {
 					Writer.Write ("\t[FAIL] ");
 				} else {
 					Writer.Write ("\t[INFO] ");
@@ -180,6 +206,27 @@ namespace Android.NUnitLite {
 		
 		static public IDictionary<string,TestResult> Results {
 			get { return results; }
+		}
+
+		public TestResult Run (NUnit.Framework.Internal.Test test)
+		{
+			TestExecutionContext current = TestExecutionContext.CurrentContext;
+			current.WorkDirectory = Environment.CurrentDirectory;
+			current.Listener = this;
+			current.TestObject = test is TestSuite ? null : Reflect.Construct ((test as TestMethod).Method.ReflectedType, null);
+			WorkItem wi = WorkItem.CreateWorkItem (test, current, this);
+			wi.Execute ();
+			return wi.Result;
+		}
+
+		public void TestOutput (TestOutput testOutput)
+		{
+			//TODO: Not yet implemented
+		}
+
+		public bool Pass (ITest pass)
+		{
+			return true;
 		}
 	}
 }
