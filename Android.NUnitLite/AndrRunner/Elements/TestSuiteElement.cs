@@ -21,6 +21,7 @@ using Android.Content;
 using Android.Views;
 
 using NUnitLite;
+using NUnit.Framework.Internal;
 
 namespace Android.NUnitLite.UI {
 	
@@ -46,25 +47,19 @@ namespace Android.NUnitLite.UI {
 				caption += String.Format ("<font color='green'><b>{0}</b> test case{1}, <i>{2}</i></font>", 
 					count, count == 1 ? String.Empty : "s", Suite.RunState);
 			} else {
-				int error = 0;
-				int failure = 0;
-				int success = 0;
-				foreach (TestResult tr in Result.Results) {
-					if (tr.IsError)
-						error++;
-					else if (tr.IsFailure)
-						failure++;
-					else if (tr.IsSuccess)
-						success++;
-				}
+
+				int failure = Result.FailCount;
+				int success = Result.PassCount;
+				int inconclusive = Result.InconclusiveCount;
+				int skipped =  Result.SkipCount;
+
 				
-				if (Result.IsSuccess) {
-					caption += String.Format ("<font color='green'><b>Success!</b> {0} test{1}</font>",
+				if (Result.ResultState.Status == NUnit.Framework.Api.TestStatus.Passed) {
+					caption += String.Format ("<font color='lime'><b>Success!</b> {0} test{1}</font>",
 						success, success == 1 ? String.Empty : "s");
-				} else if (Result.Executed) {
-					caption += String.Format ("<font color='green'>{0} success,</font> <font color='red'>{1} failure{2}, {3} error{4}</font>", 
-						success, failure, failure > 1 ? "s" : String.Empty,
-						error, error > 1 ? "s" : String.Empty);
+				} else {
+					caption += String.Format ("<font color='lime'>{0} passed,</font> <font color='red'>{1} failed,</font> <font color='yellow'>{2} ignored,</font>"
+					                          + " <font color='#FF00FF'>{3} inconclusive</font>", success, failure, skipped, inconclusive);				
 				}
 			}
 			return caption;

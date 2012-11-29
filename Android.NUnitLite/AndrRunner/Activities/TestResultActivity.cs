@@ -23,6 +23,7 @@ using Android.Widget;
 
 using MonoDroid.Dialog;
 using NUnitLite;
+using NUnit.Framework.Internal;
 
 namespace Android.NUnitLite.UI {
 	

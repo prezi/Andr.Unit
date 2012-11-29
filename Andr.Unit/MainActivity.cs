@@ -13,25 +13,26 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
 using System.Reflection;
 
 using Android.App;
 using Android.OS;
 using Android.NUnitLite;
 using Android.NUnitLite.UI;
+using NUnitLite.Runner;
+using NUnit.Framework.Internal;
 
-namespace Andr.Unit {
-	
+namespace Andr.Unit
+{
 	[Activity (Label = "Xamarin's Andr.Unit", MainLauncher = true)]
-	public class MainActivity : RunnerActivity {
-		
+	public class MainActivity : RunnerActivity
+	{
 		protected override void OnCreate (Bundle bundle)
 		{
 			// tests can be inside the main assembly
-			Add (Assembly.GetExecutingAssembly ());
+			AddTest (Assembly.GetExecutingAssembly ());
 			// or in any reference assemblies			
-			Add (typeof (m4a.tests.RunnerTest).Assembly);
+			AddTest (typeof (m4a.tests.RunnerTest).Assembly);
 			// or in any assembly that you load (since JIT is available)
 			
 #if false

@@ -17,6 +17,8 @@
 using System;
 
 using NUnitLite;
+using NUnit.Framework.Internal;
+using NUnit.Framework.Api;
 
 namespace Android.NUnitLite.UI {
 	
