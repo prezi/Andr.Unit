@@ -115,13 +115,9 @@
       <Project>{6A005891-A3D6-4398-A729-F645397D573A}</Project>
       <Name>Android.NUnitLite</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MonoTest.Concurrent\MonoTest.Concurrent.csproj">
-      <Project>{B2DACE4D-3D4F-4387-B02B-EC204B92F912}</Project>
-      <Name>MonoTest.Concurrent</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoTest.Generic\MonoTest.Generic.csproj">
-      <Project>{D7E82F06-5147-48D5-A2F8-897FC4448B86}</Project>
-      <Name>MonoTest.Generic</Name>
+    <ProjectReference Include="..\MonoTests\MonoTests.csproj">
+      <Project>{C6BB4577-4B2F-413D-80DA-5610639C7603}</Project>
+      <Name>MonoTests</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

@@ -34,8 +34,7 @@ namespace Andr.Unit
 
 			// or in any reference assemblies			
 #region Mono Tests
-			AddTest (typeof (MonoTest.Concurrent.ConcurrentBagTests).Assembly);
-			AddTest (typeof (MonoTest.Generic.LinkedListTest).Assembly);
+			AddTest (typeof (MonoTests.MockTest).Assembly);
 #endregion
 
 			// or in any assembly that you load (since JIT is available)
