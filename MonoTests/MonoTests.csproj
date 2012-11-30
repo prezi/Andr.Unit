@@ -20,7 +20,7 @@
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG;NET_2_0;NET_2_1;MONODROID;MOBILE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
@@ -41,13 +41,260 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="MockTest.cs" />
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Generic\LinkedListTest.cs">
+      <Link>System.Collections.Generic\LinkedListTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Generic\QueueTest.cs">
+      <Link>System.Collections.Generic\QueueTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Generic\SortedDictionaryTest.cs">
+      <Link>System.Collections.Generic\SortedDictionaryTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Generic\SortedListTest.cs">
+      <Link>System.Collections.Generic\SortedListTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Generic\StackTest.cs">
+      <Link>System.Collections.Generic\StackTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\FileStyleUriParserCas.cs">
+      <Link>System\FileStyleUriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\FileStyleUriParserTest.cs">
+      <Link>System\FileStyleUriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\FtpStyleUriParserCas.cs">
+      <Link>System\FtpStyleUriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\FtpStyleUriParserTest.cs">
+      <Link>System\FtpStyleUriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\GenericUriParserCas.cs">
+      <Link>System\GenericUriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\GenericUriParserTest.cs">
+      <Link>System\GenericUriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\HttpStyleUriParserCas.cs">
+      <Link>System\HttpStyleUriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\HttpStyleUriParserTest.cs">
+      <Link>System\HttpStyleUriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\NetPipeStyleUriParserCas.cs">
+      <Link>System\NetPipeStyleUriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\NetPipeStyleUriParserTest.cs">
+      <Link>System\NetPipeStyleUriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\NetTcpStyleUriParserCas.cs">
+      <Link>System\NetTcpStyleUriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\NetTcpStyleUriParserTest.cs">
+      <Link>System\NetTcpStyleUriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\NewsStyleUriParserCas.cs">
+      <Link>System\NewsStyleUriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\NewsStyleUriParserTest.cs">
+      <Link>System\NewsStyleUriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\uri-test-generator.cs">
+      <Link>System\uri-test-generator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriBuilderCas.cs">
+      <Link>System\UriBuilderCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriBuilderTest.cs">
+      <Link>System\UriBuilderTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriFormatExceptionCas.cs">
+      <Link>System\UriFormatExceptionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriParserCas.cs">
+      <Link>System\UriParserCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriParserTest.cs">
+      <Link>System\UriParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriTest.cs">
+      <Link>System\UriTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriTest2.cs">
+      <Link>System\UriTest2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriTest3.cs">
+      <Link>System\UriTest3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriTypeConverterCas.cs">
+      <Link>System\UriTypeConverterCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System\UriTypeConverterTest.cs">
+      <Link>System\UriTypeConverterTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\BitVector32Cas.cs">
+      <Link>System.Collections.Specialized\BitVector32Cas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\BitVector32Test.cs">
+      <Link>System.Collections.Specialized\BitVector32Test.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\HybridDictionaryCas.cs">
+      <Link>System.Collections.Specialized\HybridDictionaryCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\HybridDictionaryTest.cs">
+      <Link>System.Collections.Specialized\HybridDictionaryTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\ListDictionaryCas.cs">
+      <Link>System.Collections.Specialized\ListDictionaryCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\ListDictionaryTest.cs">
+      <Link>System.Collections.Specialized\ListDictionaryTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\NameObjectCollectionBaseCas.cs">
+      <Link>System.Collections.Specialized\NameObjectCollectionBaseCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\NameObjectCollectionBaseTest.cs">
+      <Link>System.Collections.Specialized\NameObjectCollectionBaseTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\NameValueCollectionCas.cs">
+      <Link>System.Collections.Specialized\NameValueCollectionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\NameValueCollectionTest.cs">
+      <Link>System.Collections.Specialized\NameValueCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\StringDictionaryCas.cs">
+      <Link>System.Collections.Specialized\StringDictionaryCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Collections.Specialized\StringDictionaryTest.cs">
+      <Link>System.Collections.Specialized\StringDictionaryTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.CodeDom.Compiler\GeneratedCodeAttributeCas.cs">
+      <Link>System.CodeDom.Compiler\GeneratedCodeAttributeCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.CodeDom.Compiler\GeneratedCodeAttributeTest.cs">
+      <Link>System.CodeDom.Compiler\GeneratedCodeAttributeTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.CodeDom.Compiler\IndentedTextWriterCas.cs">
+      <Link>System.CodeDom.Compiler\IndentedTextWriterCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.CodeDom.Compiler\IndentedTextWriterTest.cs">
+      <Link>System.CodeDom.Compiler\IndentedTextWriterTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\ArrayConverterTests.cs">
+      <Link>System.ComponentModel\ArrayConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\AsyncOperationManagerTest.cs">
+      <Link>System.ComponentModel\AsyncOperationManagerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\AttributeCollectionTest.cs">
+      <Link>System.ComponentModel\AttributeCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\BackgroundWorkerTest.cs">
+      <Link>System.ComponentModel\BackgroundWorkerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\BindingListTest.cs">
+      <Link>System.ComponentModel\BindingListTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\ByteConverterTests.cs">
+      <Link>System.ComponentModel\ByteConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\CharConverterTest.cs">
+      <Link>System.ComponentModel\CharConverterTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\CollectionConverterTest.cs">
+      <Link>System.ComponentModel\CollectionConverterTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\ComponentConverterTests.cs">
+      <Link>System.ComponentModel\ComponentConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\CultureInfoConverterTest.cs">
+      <Link>System.ComponentModel\CultureInfoConverterTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\DateTimeConverterTests.cs">
+      <Link>System.ComponentModel\DateTimeConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\DateTimeOffsetConverterTests.cs">
+      <Link>System.ComponentModel\DateTimeOffsetConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\DecimalConverterTests.cs">
+      <Link>System.ComponentModel\DecimalConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\DefaultValueAttributeTest.cs">
+      <Link>System.ComponentModel\DefaultValueAttributeTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\DesignerAttributeTest.cs">
+      <Link>System.ComponentModel\DesignerAttributeTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\DisplayNameAttributeTests.cs">
+      <Link>System.ComponentModel\DisplayNameAttributeTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\DoubleConverterTests.cs">
+      <Link>System.ComponentModel\DoubleConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\EnumConverterTests.cs">
+      <Link>System.ComponentModel\EnumConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\EventDescriptorCollectionTests.cs">
+      <Link>System.ComponentModel\EventDescriptorCollectionTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\Int16ConverterTests.cs">
+      <Link>System.ComponentModel\Int16ConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\Int32ConverterTests.cs">
+      <Link>System.ComponentModel\Int32ConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\Int64ConverterTests.cs">
+      <Link>System.ComponentModel\Int64ConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\InvalidEnumArgumentExceptionTest.cs">
+      <Link>System.ComponentModel\InvalidEnumArgumentExceptionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\ListChangedEventArgsTest.cs">
+      <Link>System.ComponentModel\ListChangedEventArgsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\MultilineStringConverterTest.cs">
+      <Link>System.ComponentModel\MultilineStringConverterTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\NullableConverterTest.cs">
+      <Link>System.ComponentModel\NullableConverterTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\PropertyDescriptorCollectionTests.cs">
+      <Link>System.ComponentModel\PropertyDescriptorCollectionTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\SByteConverterTests.cs">
+      <Link>System.ComponentModel\SByteConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\SingleConverterTests.cs">
+      <Link>System.ComponentModel\SingleConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\TypeConverterTests.cs">
+      <Link>System.ComponentModel\TypeConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\TypeDescriptionProviderTest.cs">
+      <Link>System.ComponentModel\TypeDescriptionProviderTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\UInt16ConverterTests.cs">
+      <Link>System.ComponentModel\UInt16ConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\UInt32ConverterTests.cs">
+      <Link>System.ComponentModel\UInt32ConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\UInt64ConverterTests.cs">
+      <Link>System.ComponentModel\UInt64ConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\Win32ExceptionTest.cs">
+      <Link>System.ComponentModel\Win32ExceptionTest.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Microsoft.CSharp\" />
+    <Folder Include="System.Collections.Generic\" />
+    <Folder Include="System\" />
+    <Folder Include="System.Collections.Specialized\" />
+    <Folder Include="System.CodeDom.Compiler\" />
+    <Folder Include="System.ComponentModel\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Android.NUnitLite\Android.NUnitLite.csproj">
