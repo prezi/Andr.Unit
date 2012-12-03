@@ -79,8 +79,7 @@ namespace Android.NUnitLite.UI
 			SetContentView (lv);
 
 			// AutoStart running the tests (with either the supplied 'writer' or the options)
-			//if (AndroidRunner.Suites.Count > 0) {
-			if (false) {
+			if (AndroidRunner.Suites.Count > 0) {
 				string msg = String.Format ("Automatically running tests{0}...", 
 					Runner.TerminateAfterExecution ? " and closing application" : String.Empty);
 				Toast.MakeText (this, msg, ToastLength.Long).Show ();
