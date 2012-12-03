@@ -288,6 +288,418 @@
     <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel\Win32ExceptionTest.cs">
       <Link>System.ComponentModel\Win32ExceptionTest.cs</Link>
     </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel.Design.Serialization\InstanceDescriptorCas.cs">
+      <Link>System.ComponentModel.Design.Serialization\InstanceDescriptorCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.ComponentModel.Design.Serialization\InstanceDescriptorTest.cs">
+      <Link>System.ComponentModel.Design.Serialization\InstanceDescriptorTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Diagnostics\FileVersionInfoTest.cs">
+      <Link>System.Diagnostics\FileVersionInfoTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Diagnostics\ProcessStartInfoTest.cs">
+      <Link>System.Diagnostics\ProcessStartInfoTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Diagnostics\ProcessTest.cs">
+      <Link>System.Diagnostics\ProcessTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Diagnostics\StopwatchTest.cs">
+      <Link>System.Diagnostics\StopwatchTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.IO.Compression\DeflateStreamCas.cs">
+      <Link>System.IO.Compression\DeflateStreamCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.IO.Compression\GZipStreamCas.cs">
+      <Link>System.IO.Compression\GZipStreamCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieCollectionTest.cs">
+      <Link>System.Net\CookieCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieContainerTest.cs">
+      <Link>System.Net\CookieContainerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieParserTest.cs">
+      <Link>System.Net\CookieParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieTest.cs">
+      <Link>System.Net\CookieTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CredentialCacheTest.cs">
+      <Link>System.Net\CredentialCacheTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\DnsTest.cs">
+      <Link>System.Net\DnsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\EndPointTest.cs">
+      <Link>System.Net\EndPointTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebRequestCas.cs">
+      <Link>System.Net\FileWebRequestCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebRequestTest.cs">
+      <Link>System.Net\FileWebRequestTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebResponseTest.cs">
+      <Link>System.Net\FileWebResponseTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FtpWebRequestTest.cs">
+      <Link>System.Net\FtpWebRequestTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerBasicIdentityTest.cs">
+      <Link>System.Net\HttpListenerBasicIdentityTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerPrefixCollectionTest.cs">
+      <Link>System.Net\HttpListenerPrefixCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerTest.cs">
+      <Link>System.Net\HttpListenerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpWebRequestCas.cs">
+      <Link>System.Net\HttpWebRequestCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpWebResponseTest.cs">
+      <Link>System.Net\HttpWebResponseTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\IPAddressTest.cs">
+      <Link>System.Net\IPAddressTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\IPEndPointTest.cs">
+      <Link>System.Net\IPEndPointTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\NetworkCredentialTest.cs">
+      <Link>System.Net\NetworkCredentialTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\ServicePointManagerTest.cs">
+      <Link>System.Net\ServicePointManagerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\ServicePointTest.cs">
+      <Link>System.Net\ServicePointTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\SocketResponder.cs">
+      <Link>System.Net\SocketResponder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebClientTest.cs">
+      <Link>System.Net\WebClientTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebPermissionAttributeTest.cs">
+      <Link>System.Net\WebPermissionAttributeTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebPermissionTest.cs">
+      <Link>System.Net\WebPermissionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebProxyTest.cs">
+      <Link>System.Net\WebProxyTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebRequestTest.cs">
+      <Link>System.Net\WebRequestTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebUtilityTest.cs">
+      <Link>System.Net\WebUtilityTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\AlternateViewCollectionTest.cs">
+      <Link>System.Net.Mail\AlternateViewCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\AlternateViewTest.cs">
+      <Link>System.Net.Mail\AlternateViewTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\AttachmentCollectionTest.cs">
+      <Link>System.Net.Mail\AttachmentCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\AttachmentTest.cs">
+      <Link>System.Net.Mail\AttachmentTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\LinkedResourceCollectionTest.cs">
+      <Link>System.Net.Mail\LinkedResourceCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\LinkedResourceTest.cs">
+      <Link>System.Net.Mail\LinkedResourceTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\MailAddressCollectionTest.cs">
+      <Link>System.Net.Mail\MailAddressCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\MailAddressTest.cs">
+      <Link>System.Net.Mail\MailAddressTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\MailMessageTest.cs">
+      <Link>System.Net.Mail\MailMessageTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\SmtpExceptionTest.cs">
+      <Link>System.Net.Mail\SmtpExceptionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\SmtpServer.cs">
+      <Link>System.Net.Mail\SmtpServer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mime\ContentDispositionTest.cs">
+      <Link>System.Net.Mime\ContentDispositionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mime\ContentTypeTest.cs">
+      <Link>System.Net.Mime\ContentTypeTest.cs</Link>
+      <DependentUpon>ContentDispositionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.NetworkInformation\PhysicalAddressTest.cs">
+      <Link>System.Net.NetworkInformation\PhysicalAddressTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\IPv6MulticastOptionTest.cs">
+      <Link>System.Net.Sockets\IPv6MulticastOptionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\MulticastOptionTest.cs">
+      <Link>System.Net.Sockets\MulticastOptionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\NetworkStreamCas.cs">
+      <Link>System.Net.Sockets\NetworkStreamCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\NetworkStreamTest.cs">
+      <Link>System.Net.Sockets\NetworkStreamTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\SocketCas.cs">
+      <Link>System.Net.Sockets\SocketCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\SocketTest.cs">
+      <Link>System.Net.Sockets\SocketTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\TcpClientCas.cs">
+      <Link>System.Net.Sockets\TcpClientCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\TcpClientTest.cs">
+      <Link>System.Net.Sockets\TcpClientTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\TcpListenerTest.cs">
+      <Link>System.Net.Sockets\TcpListenerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Sockets\UdpClientTest.cs">
+      <Link>System.Net.Sockets\UdpClientTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography\AsnEncodedDataTest.cs">
+      <Link>System.Security.Cryptography\AsnEncodedDataTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography\OidCollectionTest.cs">
+      <Link>System.Security.Cryptography\OidCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography\OidEnumeratorTest.cs">
+      <Link>System.Security.Cryptography\OidEnumeratorTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography\OidTest.cs">
+      <Link>System.Security.Cryptography\OidTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_01_SignatureVerification.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_01_SignatureVerification.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_02_ValidityPeriod.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_02_ValidityPeriod.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_03_VerifyingNameChaining.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_03_VerifyingNameChaining.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_04_BasicCertificateRevocationTests.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_04_BasicCertificateRevocationTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_05_VerifyingPathWithSelfIssuedCertificates.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_05_VerifyingPathWithSelfIssuedCertificates.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_06_VerifyingBasicConstraints.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_06_VerifyingBasicConstraints.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_07_KeyUsage.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_07_KeyUsage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_08_CertificatePolicies.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_08_CertificatePolicies.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_09_RequireExplicitPolicy.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_09_RequireExplicitPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_10_PolicyMappings.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_10_PolicyMappings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_11_InhibitPolicyMapping.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_11_InhibitPolicyMapping.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_12_InhibitAnyPolicy.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_12_InhibitAnyPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_13_NameConstraints.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_13_NameConstraints.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_14_DistributionPoints.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_14_DistributionPoints.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_15_DeltaCRL.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_15_DeltaCRL.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\Pkits_4_16_PrivateCertificateExtensions.cs">
+      <Link>System.Security.Cryptography.X509Certificates\Pkits_4_16_PrivateCertificateExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\PkitsTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\PkitsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\PublicKeyCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\PublicKeyCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\PublicKeyTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\PublicKeyTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X500DistinguishedNameCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X500DistinguishedNameCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X500DistinguishedNameTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X500DistinguishedNameTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509BasicConstraintsExtensionCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509BasicConstraintsExtensionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509BasicConstraintsExtensionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509BasicConstraintsExtensionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509Certificate2CollectionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509Certificate2CollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509Certificate2Test.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509Certificate2Test.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509CertificateCollectionCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509CertificateCollectionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509CertificateCollectionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509CertificateCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509ChainCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509ChainCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509ChainPolicyCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509ChainPolicyCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509ChainPolicyTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509ChainPolicyTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509ChainTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509ChainTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509EnhancedKeyUsageExtensionCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509EnhancedKeyUsageExtensionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509EnhancedKeyUsageExtensionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509EnhancedKeyUsageExtensionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509ExtensionCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509ExtensionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509ExtensionCollectionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509ExtensionCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509ExtensionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509ExtensionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509KeyUsageExtensionCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509KeyUsageExtensionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509KeyUsageExtensionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509KeyUsageExtensionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509StoreCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509StoreCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509StoreTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509StoreTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509SubjectKeyIdentifierExtensionCas.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509SubjectKeyIdentifierExtensionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\X509SubjectKeyIdentifierExtensionTest.cs">
+      <Link>System.Security.Cryptography.X509Certificates\X509SubjectKeyIdentifierExtensionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\pkits\x509build.cs">
+      <Link>System.Security.Cryptography.X509Certificates\pkits\x509build.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\CaptureCas.cs">
+      <Link>System.Text.RegularExpressions\CaptureCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\CaptureCollectionCas.cs">
+      <Link>System.Text.RegularExpressions\CaptureCollectionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\GroupCas.cs">
+      <Link>System.Text.RegularExpressions\GroupCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\GroupCollectionCas.cs">
+      <Link>System.Text.RegularExpressions\GroupCollectionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\GroupTest.cs">
+      <Link>System.Text.RegularExpressions\GroupTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\MatchCas.cs">
+      <Link>System.Text.RegularExpressions\MatchCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\MatchCollectionCas.cs">
+      <Link>System.Text.RegularExpressions\MatchCollectionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\MatchTest.cs">
+      <Link>System.Text.RegularExpressions\MatchTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\PerlTest.cs">
+      <Link>System.Text.RegularExpressions\PerlTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\PerlTrials.cs">
+      <Link>System.Text.RegularExpressions\PerlTrials.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexBugs.cs">
+      <Link>System.Text.RegularExpressions\RegexBugs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexCompilationInfoCas.cs">
+      <Link>System.Text.RegularExpressions\RegexCompilationInfoCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexCompilationInfoTest.cs">
+      <Link>System.Text.RegularExpressions\RegexCompilationInfoTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexMatchTests.cs">
+      <Link>System.Text.RegularExpressions\RegexMatchTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexReplace.cs">
+      <Link>System.Text.RegularExpressions\RegexReplace.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexReplaceTests.cs">
+      <Link>System.Text.RegularExpressions\RegexReplaceTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexResultTests.cs">
+      <Link>System.Text.RegularExpressions\RegexResultTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexTest.cs">
+      <Link>System.Text.RegularExpressions\RegexTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\RegexTrial.cs">
+      <Link>System.Text.RegularExpressions\RegexTrial.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Text.RegularExpressions\SplitTests.cs">
+      <Link>System.Text.RegularExpressions\SplitTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Timers\ElapsedEventArgsCas.cs">
+      <Link>System.Timers\ElapsedEventArgsCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Timers\TimerCas.cs">
+      <Link>System.Timers\TimerCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Timers\TimersDescriptionAttributeCas.cs">
+      <Link>System.Timers\TimersDescriptionAttributeCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Timers\TimersDescriptionAttributeTest.cs">
+      <Link>System.Timers\TimersDescriptionAttributeTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Timers\TimerTest.cs">
+      <Link>System.Timers\TimerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Threading\BarrierTest.cs">
+      <Link>System.Threading\BarrierTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Threading\SemaphoreCas.cs">
+      <Link>System.Threading\SemaphoreCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Threading\SemaphoreFullExceptionCas.cs">
+      <Link>System.Threading\SemaphoreFullExceptionCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Threading\SemaphoreTest.cs">
+      <Link>System.Threading\SemaphoreTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Threading\ThreadExceptionEventArgsCas.cs">
+      <Link>System.Threading\ThreadExceptionEventArgsCas.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="System.Collections.Generic\" />
@@ -295,11 +707,33 @@
     <Folder Include="System.Collections.Specialized\" />
     <Folder Include="System.CodeDom.Compiler\" />
     <Folder Include="System.ComponentModel\" />
+    <Folder Include="System.ComponentModel.Design.Serialization\" />
+    <Folder Include="System.Diagnostics\" />
+    <Folder Include="System.IO.Compression\" />
+    <Folder Include="System.Net\" />
+    <Folder Include="System.Net.Mail\" />
+    <Folder Include="System.Net.Mime\" />
+    <Folder Include="System.Net.NetworkInformation\" />
+    <Folder Include="System.Net.Sockets\" />
+    <Folder Include="System.Security.Cryptography\" />
+    <Folder Include="System.Security.Cryptography.X509Certificates\" />
+    <Folder Include="System.Text.RegularExpressions\" />
+    <Folder Include="System.Threading\" />
+    <Folder Include="System.Timers\" />
+    <Folder Include="System.Security.Cryptography.X509Certificates\pkits\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Android.NUnitLite\Android.NUnitLite.csproj">
       <Project>{6A005891-A3D6-4398-A729-F645397D573A}</Project>
       <Name>Android.NUnitLite</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\pkits\Makefile">
+      <Link>System.Security.Cryptography.X509Certificates\pkits\Makefile</Link>
+    </None>
+    <None Include="..\..\mono\mcs\class\System\Test\System.Security.Cryptography.X509Certificates\pkits\README">
+      <Link>System.Security.Cryptography.X509Certificates\pkits\README</Link>
+    </None>
   </ItemGroup>
 </Project>
