@@ -132,10 +132,10 @@ namespace Android.NUnitLite.UI
 					Runner.Run (suite); 
 				}
 			} finally {
+				fetchResults();
 				Runner.CloseWriter ();
 			}
 
-			fetchResults ();
 			foreach (TestElement te in main) {
 				te.Update ();
 			}
@@ -146,7 +146,7 @@ namespace Android.NUnitLite.UI
 			int testCount = 0;
 			testCount = Runner.passed + Runner.failed + Runner.skipped + Runner.inconclusive;
 
-			Console.WriteLine("\n\nTests run: {0} \nPassed: {1}, Failed: {2}, Skipped: {3}, Inconclusive: {4}\n\n", testCount, Runner.passed, Runner.failed, Runner.skipped, Runner.inconclusive);
+			Runner.Writer.WriteLine("\n\nTests run: {0} | Passed: {1}, Failed: {2}, Skipped: {3}, Inconclusive: {4}\n\n", testCount, Runner.passed, Runner.failed, Runner.skipped, Runner.inconclusive);
 		}
 	}
 }
