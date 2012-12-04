@@ -312,90 +312,6 @@
     <Compile Include="..\..\mono\mcs\class\System\Test\System.IO.Compression\GZipStreamCas.cs">
       <Link>System.IO.Compression\GZipStreamCas.cs</Link>
     </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieCollectionTest.cs">
-      <Link>System.Net\CookieCollectionTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieContainerTest.cs">
-      <Link>System.Net\CookieContainerTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieParserTest.cs">
-      <Link>System.Net\CookieParserTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieTest.cs">
-      <Link>System.Net\CookieTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CredentialCacheTest.cs">
-      <Link>System.Net\CredentialCacheTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\DnsTest.cs">
-      <Link>System.Net\DnsTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\EndPointTest.cs">
-      <Link>System.Net\EndPointTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebRequestCas.cs">
-      <Link>System.Net\FileWebRequestCas.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebRequestTest.cs">
-      <Link>System.Net\FileWebRequestTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebResponseTest.cs">
-      <Link>System.Net\FileWebResponseTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FtpWebRequestTest.cs">
-      <Link>System.Net\FtpWebRequestTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerBasicIdentityTest.cs">
-      <Link>System.Net\HttpListenerBasicIdentityTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerPrefixCollectionTest.cs">
-      <Link>System.Net\HttpListenerPrefixCollectionTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerTest.cs">
-      <Link>System.Net\HttpListenerTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpWebRequestCas.cs">
-      <Link>System.Net\HttpWebRequestCas.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpWebResponseTest.cs">
-      <Link>System.Net\HttpWebResponseTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\IPAddressTest.cs">
-      <Link>System.Net\IPAddressTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\IPEndPointTest.cs">
-      <Link>System.Net\IPEndPointTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\NetworkCredentialTest.cs">
-      <Link>System.Net\NetworkCredentialTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\ServicePointManagerTest.cs">
-      <Link>System.Net\ServicePointManagerTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\ServicePointTest.cs">
-      <Link>System.Net\ServicePointTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\SocketResponder.cs">
-      <Link>System.Net\SocketResponder.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebClientTest.cs">
-      <Link>System.Net\WebClientTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebPermissionAttributeTest.cs">
-      <Link>System.Net\WebPermissionAttributeTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebPermissionTest.cs">
-      <Link>System.Net\WebPermissionTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebProxyTest.cs">
-      <Link>System.Net\WebProxyTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebRequestTest.cs">
-      <Link>System.Net\WebRequestTest.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebUtilityTest.cs">
-      <Link>System.Net\WebUtilityTest.cs</Link>
-    </Compile>
     <Compile Include="..\..\mono\mcs\class\System\Test\System.Net.Mail\AlternateViewCollectionTest.cs">
       <Link>System.Net.Mail\AlternateViewCollectionTest.cs</Link>
     </Compile>
@@ -699,6 +615,96 @@
     </Compile>
     <Compile Include="..\..\mono\mcs\class\System\Test\System.Threading\ThreadExceptionEventArgsCas.cs">
       <Link>System.Threading\ThreadExceptionEventArgsCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieCollectionTest.cs">
+      <Link>System.Net\CookieCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieContainerTest.cs">
+      <Link>System.Net\CookieContainerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieParserTest.cs">
+      <Link>System.Net\CookieParserTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CookieTest.cs">
+      <Link>System.Net\CookieTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\CredentialCacheTest.cs">
+      <Link>System.Net\CredentialCacheTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\DnsTest.cs">
+      <Link>System.Net\DnsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\EndPointTest.cs">
+      <Link>System.Net\EndPointTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebRequestCas.cs">
+      <Link>System.Net\FileWebRequestCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebRequestTest.cs">
+      <Link>System.Net\FileWebRequestTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FileWebResponseTest.cs">
+      <Link>System.Net\FileWebResponseTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\FtpWebRequestTest.cs">
+      <Link>System.Net\FtpWebRequestTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListener2Test.cs">
+      <Link>System.Net\HttpListener2Test.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerBasicIdentityTest.cs">
+      <Link>System.Net\HttpListenerBasicIdentityTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerPrefixCollectionTest.cs">
+      <Link>System.Net\HttpListenerPrefixCollectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerRequestTest.cs">
+      <Link>System.Net\HttpListenerRequestTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpListenerTest.cs">
+      <Link>System.Net\HttpListenerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpWebRequestCas.cs">
+      <Link>System.Net\HttpWebRequestCas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\HttpWebResponseTest.cs">
+      <Link>System.Net\HttpWebResponseTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\IPAddressTest.cs">
+      <Link>System.Net\IPAddressTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\IPEndPointTest.cs">
+      <Link>System.Net\IPEndPointTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\NetworkCredentialTest.cs">
+      <Link>System.Net\NetworkCredentialTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\ServicePointManagerTest.cs">
+      <Link>System.Net\ServicePointManagerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\ServicePointTest.cs">
+      <Link>System.Net\ServicePointTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\SocketResponder.cs">
+      <Link>System.Net\SocketResponder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebClientTest.cs">
+      <Link>System.Net\WebClientTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebPermissionAttributeTest.cs">
+      <Link>System.Net\WebPermissionAttributeTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebPermissionTest.cs">
+      <Link>System.Net\WebPermissionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebProxyTest.cs">
+      <Link>System.Net\WebProxyTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebRequestTest.cs">
+      <Link>System.Net\WebRequestTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\mono\mcs\class\System\Test\System.Net\WebUtilityTest.cs">
+      <Link>System.Net\WebUtilityTest.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

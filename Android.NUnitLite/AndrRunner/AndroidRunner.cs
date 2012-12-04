@@ -35,6 +35,7 @@ namespace Android.NUnitLite
 {
 	public class AndroidRunner : ITestListener, ITestFilter
 	{
+		public int passed, failed, skipped, inconclusive;
 		Options options;
 		NUnitLiteTestAssemblyBuilder builder = new NUnitLiteTestAssemblyBuilder ();
 		Dictionary<string, object> empty = new Dictionary<string, object> ();
@@ -119,6 +120,12 @@ namespace Android.NUnitLite
 			Writer.WriteLine ("[Device Date/Time:\t{0}]", now); // to match earlier C.WL output
 			
 			// FIXME: add data about how the app was compiled (e.g. ARMvX, LLVM, Linker options)
+
+			passed = 0;
+			failed = 0;
+			skipped = 0;
+		 	inconclusive = 0;
+
 			return true;
 		}
 		
@@ -159,21 +166,28 @@ namespace Android.NUnitLite
 
 			} else {
 				if (result.ResultState.Status == TestStatus.Passed) {
-					//Writer.Write ("\t{0} ", result.Executed ? "[PASS]" : "[IGNORED]");
-					Writer.Write ("\t{0} ", result.ResultState.ToString ());
-				} else if (result.ResultState.Status == TestStatus.Failed) {
-					Writer.Write ("\t[FAIL] ");
-				} else {
-					Writer.Write ("\t[INFO] ");
+				Writer.Write ("\tTest Passed: ");
+					passed++;
+				} else if (result.ResultState.Status == TestStatus.Failed || result.ResultState.Label == "Error") {
+					Writer.Write ("\tTest Failed: ");
+					failed++;
+				} else if (result.ResultState.Status == TestStatus.Skipped || result.ResultState.Label == "Ignored" || result.ResultState.Label == "Invalid"){
+					Writer.Write ("\tTest Skipped: ");
+					skipped++;
+				} else if (result.ResultState.Status == TestStatus.Inconclusive) {
+					Writer.Write ("\tTest Inconclusive: ");
+					inconclusive++;
 				}
+
 				Writer.Write (result.Test.Name);
-				
+
 				string message = result.Message;
 				if (!String.IsNullOrEmpty (message)) {
 					Writer.Write (" : {0}", message.Replace ("\r\n", "\\r\\n"));
 				}
+			
 				Writer.WriteLine ();
-						
+
 				string stacktrace = result.StackTrace;
 				if (!String.IsNullOrEmpty (result.StackTrace)) {
 					string[] lines = stacktrace.Split (new char [] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
