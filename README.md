@@ -7,11 +7,12 @@ Forked from spouliot/Andr.Unit for use by Xamarin QA.
 
 1. Clone all the required code from github.com
 
-  $ git clone git://github.com/spouliot/MonoDroid.Dialog.git
+	$ git clone git://github.com/pjcollins/Andr.Unit.git
+
+ 	$ git clone git://github.com/pjcollins/MonoDroid.Dialog.git
 
 	$ git clone git://github.com/spouliot/NUnitLite.git
 
-	$ git clone git://github.com/spouliot/Andr.Unit.git
 
 	note: make sure to pull from all of them to get the latest fixes
 
