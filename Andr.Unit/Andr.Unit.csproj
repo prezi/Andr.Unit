@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="MockTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -116,8 +115,12 @@
       <Project>{6A005891-A3D6-4398-A729-F645397D573A}</Project>
       <Name>Android.NUnitLite</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MonoTests\MonoTests.csproj">
-      <Project>{C6BB4577-4B2F-413D-80DA-5610639C7603}</Project>
+    <ProjectReference Include="..\..\QualityAssurance\Automation\Android.Unit\Android.Unit.csproj">
+      <Project>{08547836-9BC9-4870-AF9B-D8A41BAA1E04}</Project>
+      <Name>Android.Unit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QualityAssurance\Automation\Android.Unit\MonoTests\MonoTests.csproj">
+      <Project>{C046483A-99F4-401E-8595-537F65277E2E}</Project>
       <Name>MonoTests</Name>
     </ProjectReference>
   </ItemGroup>

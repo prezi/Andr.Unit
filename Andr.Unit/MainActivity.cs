@@ -34,7 +34,12 @@ namespace Andr.Unit
 
 			// or in any reference assemblies			
 #region Mono Tests
-			AddTest (typeof (MonoTests.System.Collections.Generic.LinkedListTest).Assembly);
+			AddTest (typeof (MonoTests.System.FileStyleUriParserTest).Assembly);
+#endregion
+
+
+#region Android.Unit tests
+			AddTest (typeof (Android.Unit.RegressionTests).Assembly);
 #endregion
 
 			// or in any assembly that you load (since JIT is available)

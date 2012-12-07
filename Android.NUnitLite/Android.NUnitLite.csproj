@@ -43,12 +43,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\MonoDroid.Dialog\MonoDroid.Dialog\MonoDroid.Dialog.csproj">
-      <Project>{33044C7B-47A4-4113-A61A-EB429407F818}</Project>
-      <Name>MonoDroid.Dialog</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="AndrRunner\Elements\TestSuiteElement.cs" />
     <Compile Include="AndrRunner\Elements\ActivityElement.cs" />
     <Compile Include="AndrRunner\Elements\ActionElement.cs" />
@@ -326,5 +320,11 @@
     <Folder Include="AndrRunner\" />
     <Folder Include="AndrRunner\Activities\" />
     <Folder Include="AndrRunner\Elements\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MonoDroid.Dialog\MonoDroid.Dialog\MonoDroid.Dialog.csproj">
+      <Project>{33044C7B-47A4-4113-A61A-EB429407F818}</Project>
+      <Name>MonoDroid.Dialog</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
