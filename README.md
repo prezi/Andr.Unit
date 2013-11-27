@@ -1,13 +1,13 @@
 # Andr.Unit
 
-Forked from spouliot/Andr.Unit for use by Xamarin QA.
+Forked from pjcollins/Andr.Unit for use by Prezi.
 
 
 ## How To
 
 1. Clone all the required code from github.com
 
-	$ git clone git://github.com/pjcollins/Andr.Unit.git
+	$ git clone git://github.com/prezi/Andr.Unit.git
 
  	$ git clone git://github.com/pjcollins/MonoDroid.Dialog.git
 
@@ -25,11 +25,3 @@ Forked from spouliot/Andr.Unit for use by Xamarin QA.
 ## Documentation
 
 * [NUnitLite](http://www.nunitlite.org/) web site
-
-## Todo List
-
-* Feature parity with Touch.Unit (mostly network logging)
-
-* Bug fixing (some stuff does not work, likely my fault ;-)
-
-* otherwise KISS - want something more, fork it :-)
